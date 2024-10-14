@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로필 선택</title>
+    <!-- CSS 파일 연결 -->
+    <link rel="stylesheet" type="text/css" href="./css/profile.css">
+
+      <!-- slider stylesheet -->
+    <link rel="stylesheet" type="text/css"
+  href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+<!-- bootstrap core css -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+<!-- fonts style -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700|Raleway:400,700&display=swap"
+  rel="stylesheet" />
+
+<!-- Custom styles for this template -->
+<link href="css/style.css" rel="stylesheet" />
+<!-- responsive style -->
+<link href="css/responsive.css" rel="stylesheet" />
+
+<style>
+  .blog_btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+</style>
+</head>
+<body>
+    <!-- 상단 헤더 섹션에 로고와 텍스트 추가 -->
+    <!-- <header class="header_section">
+        <div class="logo-container">
+            <img src="./images/logo.png" alt="IOMEAL" class="logo" onclick="location.href = './main_home.html'" >
+            <span class="logo-text" onclick="location.href = '../origin/main_home.html'">IOMEAL</span>
+        </div>
+    </header> -->
+
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="main_home.html">
+            <img src="images/fridge2.png" alt="" />
+            <span>
+              IOMEAL
+            </span>
+          </a>
+
+          <div class="navbar-collapse" id="">
+            <div class="custom_menu-btn">
+              <button onclick="openNav()">
+                <span class="s-1"> </span>
+                <span class="s-2"> </span>
+                <span class="s-3"> </span>
+              </button>
+            </div>
+            <div id="myNav" class="overlay">
+              <div class="overlay-content">
+                <a href="main_home.html">HOME</a>
+                <a href="add_food.html">ADD</a>
+                <a href="recipes.html">RECIPES</a>
+                <a href="best_before.html">BEST BEFORE</a>
+                <a href="community.html">COMMUNITY</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+
+    <div class="main">
+        <div class="container"> <!-- 둥근 사각형 배경 -->
+            <div class="label">프로필을 선택하세요.</div>
+            <div class="profile">
+                <div class="link" onclick="location.href = './main_home.html'">
+                    <div class="icon" style="background-image:url(./images/dad.jpg)" ></div>
+                    <div class="name">김민수</div>
+                </div>
+                <div class="link" onclick="location.href = './main_home.html'">
+                    <div class="icon" style="background-image:url(./images/mom.jpg)"></div>
+                    <div class="name">이지연</div>
+                </div>
+                <div class="link" onclick="location.href = './main_home.html'">
+                    <div class="icon" style="background-image:url(./images/she.jpg)"></div>
+                    <div class="name">이서현</div>
+                </div>
+                <div class="link" onclick="location.href = './main_home.html'">
+                    <div class="icon" style="background-image:url(./images/grandpa.jpg)" ></div>
+                    <div class="name">최봉수</div>
+                </div>
+                <div class="link" onclick="location.href = './main_home.html'">
+                    <div class="icon" style="background-image:url(./images/plus_icon.png)" ></div>
+                    <div class="name">프로필 추가</div>
+                </div>
+            </div>
+            <div class="blog_btn">
+        <a href="" class="btn btn-dark rounded-pill col-3 mt-3">프로필 관리</a>
+      </div>
+        </div>
+    </div>
+    <script>
+      function openNav() {
+        document.getElementById("myNav").classList.toggle("menu_width");
+        document
+          .querySelector(".custom_menu-btn")
+          .classList.toggle("menu_btn-style");
+      }
+    </script>
+</body>
+</html>
